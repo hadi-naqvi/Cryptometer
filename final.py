@@ -25,8 +25,10 @@ def bitcoin():
     price = data['data']['amount']
 
     #Using a linear model calculates the percent change based on the number of positive and negative tweets
-    change = (0.0195426 * results[0]) + (-0.0131052*results[1]) + 0.2406282337181418
-    return float(price)*change + float(price)
+    change = (0.00195426 * results[0]) + (-0.00131052*results[1]) - 0.2406282337181418
+    while change <= -1 or change >= 1:
+        change /= 10
+    return round(float(price)*change + float(price), 2)
 
 def eth():
     # Gets todays date
@@ -56,7 +58,9 @@ def eth():
 
     #Using a linear model calculates the percent change based on the number of positive and negative tweets
     change = (0.04408891 * results[0]) + (-0.27945181*results[1]) + -2.0871789465107735
-    return float(price)*change + float(price)
+    while change <= -1 or change >= 1:
+        change /= 10
+    return round(float(price)*change + float(price), 2)
 
 def transform(data_df):
     data_df = data_df.reset_index()
