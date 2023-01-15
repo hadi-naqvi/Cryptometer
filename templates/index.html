@@ -132,8 +132,8 @@
              return response.json();
          }).then(function (text) {
              console.log(text)
-             document.getElementById("bitCoinParagraph").innerHTML = "The price of Bitcoin is predicted to change to: " + text.btc_price;
-             document.getElementById("ethParagraph").innerHTML = "The price of Bitcoin is predicted to change to: " + text.eth_price;
+             document.getElementById("bitCoinParagraph").innerHTML = "The price of Bitcoin tomorrow is predicted to change to: ...$" + text.btc_price;
+             document.getElementById("ethParagraph").innerHTML = "The price of Ethereum tomorrow is predicted to change to: ...$" + text.eth_price;
          });
     </script>
 </body>
