@@ -10,7 +10,6 @@ def home_page():
 @app.route('/test', methods=['GET'])
 def testfn():
    message = {'btc_price':final.bitcoin(), 'eth_price':final.eth()}
-   print("Test") 
    
    return jsonify(message)
 
