@@ -6,4 +6,4 @@ This project uses a webscraper called snscrape to retrieve Tweets relevant to Bi
 ## Preview
 ![Webpage](https://i.ibb.co/wYJzCHG/Screenshot-from-2023-07-03-13-41-39.png)
 
-![Webpage](https://i.ibb.co/mGb8vcN/Screenshot-from-2023-07-03-13-41-59.png)
+![Webpage](https://images2.imgbox.com/ee/50/riDbWiTz_o.png)
